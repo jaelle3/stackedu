@@ -4,13 +4,20 @@ const User = require('../models/User');
 
 
 router.post('/register', async (req, res)=>{
+
+//check is email exists
+  const emailExists = await User.findOne({email: req.body.email});
+  if(emailExists) return res.status(400).send("Email already exists");
+
+
+
   const user = new User ({
     username: req.body.username,
     email: req.body.email,
     password: req.body.password
   });
   try {
-    console.log("try ");
+
     const savedUser = await user.save();
      return res.send(savedUser);
 
