@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/jaelle3/stackedu#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "dotenv": "^8.1.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.18.2",
