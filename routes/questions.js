@@ -1,3 +1,4 @@
+const express = require('express');
 const router = require('express').Router();
 const Question = require('../models/Question');
 const verification = require('./verifytoken');
@@ -14,15 +15,16 @@ router.post('/questions', async (req, res) => {
    return res.send(savedQuestion);
 
  }catch(err){
-  res.status(400).send("Did not save questions");
+  res.status(400).send("Did not save question");
   }
 
 });
 
 
 //Route for retrieving questions
-router.get('/', verification, (req, res) =>{
-  res.json({question: 'What is programming?'});
+router.get('/questions', verification, (req, res) =>{
+  res.json(Question);
+  console.log("done retrieving");
 
 })
 
