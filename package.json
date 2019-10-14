@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js",
+    "dev": "nodemon --exec babel-node index.js",
     "test": "mocha"
   },
   "repository": {
@@ -28,6 +28,9 @@
     "mongoose": "^5.7.3"
   },
   "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/node": "^7.6.3",
+    "@babel/preset-env": "^7.6.3",
     "eslint": "^6.5.1",
     "mocha": "^6.2.1",
     "nodemon": "^1.19.3"
