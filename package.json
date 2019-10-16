@@ -1,39 +1,19 @@
 {
-  "name": "stackedu",
+  "name": "paul-routes",
   "version": "1.0.0",
-  "description": "StackOverflow api development",
+  "description": "",
   "main": "index.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "dev": "nodemon --exec babel-node index.js",
-    "test": "mocha || true"
+    "dev": "nodemon index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jaelle3/stackedu.git"
-  },
-  "author": "Antony Nabende, Jaelle Amongi, Kafeero David",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jaelle3/stackedu/issues"
-  },
-  "homepage": "https://github.com/jaelle3/stackedu#readme",
   "dependencies": {
-    "@babel/core": "^7.6.4",
-    "@babel/node": "^7.6.3",
-    "@babel/preset-env": "^7.6.3",
-    "bcryptjs": "^2.4.3",
-    "chai": "^4.2.0",
-    "coveralls": "^3.0.7",
-    "dotenv": "^8.1.0",
-    "eslint": "^6.5.1",
-    "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-plugin-import": "^2.18.2",
+    "body-parser": "^1.19.0",
     "express": "^4.17.1",
-    "jsonwebtoken": "^8.5.1",
-    "mocha": "^6.2.1",
-    "mocha-lcov-reporter": "^1.3.0",
-    "mongoose": "^5.7.3"
+    "mongoose": "^5.7.4"
   },
   "devDependencies": {
     "nodemon": "^1.19.3"
